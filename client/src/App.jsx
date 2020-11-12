@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Router,Link} from '@reach/router';
 import Main from './views/Main';
 import Create from './views/Create';
+import Show from './views/Show';
+import Edit from './views/Edit';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Router>
         <Main path="/" />
         <Create path="/new" />
+        <Show path="/details/:id" />
+        <Edit path="/edit/:id" />
       </Router>
     </div>
   );
